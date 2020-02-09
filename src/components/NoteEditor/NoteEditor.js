@@ -31,6 +31,7 @@ export default class NoteEditor extends Component {
               required
               value={text}
               onChange={this.handleChange}
+              ref={input => input && input.focus()}
             />
             <button className={styles.submit} type="submit">
               Add
